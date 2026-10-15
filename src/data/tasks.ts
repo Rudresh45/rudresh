@@ -1,0 +1,137 @@
+/* Shared task data source - used across all screens */
+export interface Task {
+  id: string;
+  title: string;
+  description: string | null;
+  completed: boolean;
+  priority: "low" | "medium" | "high";
+  status: "todo" | "in-progress" | "done";
+  dueDate: string | null;
+  project: string | null;
+  createdAt: string;
+  completedAt: string | null;
+}
+
+/* Complete task dataset - shared between all screens */
+export const TASKS: Task[] = [
+  {
+    id: "1",
+    title: "Fix login authentication bug",
+    description: "Users cannot log in with Google OAuth",
+    completed: false,
+    priority: "high",
+    status: "in-progress",
+    dueDate: "2024-01-15",
+    project: "Auth Overhaul",
+    createdAt: "2024-01-10",
+    completedAt: null,
+  },
+  {
+    id: "2",
+    title: "Update dependencies",
+    description: "Next.js and React 18 updates",
+    completed: false,
+    priority: "medium",
+    status: "todo",
+    dueDate: "2024-01-20",
+    project: "Project Cleanup",
+    createdAt: "2024-01-12",
+    completedAt: null,
+  },
+  {
+    id: "3",
+    title: "Write API documentation",
+    description: "Update OpenAPI spec for v2.1",
+    completed: true,
+    priority: "low",
+    status: "done",
+    dueDate: "2024-01-18",
+    project: "Developer Experience",
+    createdAt: "2024-01-11",
+    completedAt: "2024-01-20",
+  },
+  {
+    id: "4",
+    title: "Fix CSS layout on mobile",
+    description: "Navigation overflow on iPhone",
+    completed: false,
+    priority: "high",
+    status: "todo",
+    dueDate: "2024-01-14",
+    project: "Responsive UI",
+    createdAt: "2024-01-13",
+    completedAt: null,
+  },
+  {
+    id: "5",
+    title: "Code review: feature-xyz",
+    description: "Review PR #45 for core module",
+    completed: false,
+    priority: "medium",
+    status: "in-progress",
+    dueDate: "2024-01-19",
+    project: "Code Standards",
+    createdAt: "2024-01-12",
+    completedAt: null,
+  },
+  {
+    id: "6",
+    title: "Setup PostgreSQL database",
+    description: "Configure Supabase project",
+    completed: false,
+    priority: "high",
+    status: "todo",
+    dueDate: "2024-02-01",
+    project: "Infrastructure",
+    createdAt: "2024-01-15",
+    completedAt: null,
+  },
+  {
+    id: "7",
+    title: "Write unit tests",
+    description: "Test coverage for auth module",
+    completed: true,
+    priority: "low",
+    status: "done",
+    dueDate: "2024-01-25",
+    project: "Quality",
+    createdAt: "2024-01-16",
+    completedAt: "2024-01-28",
+  },
+  {
+    id: "8",
+    title: "Design mobile navigation",
+    description: "Bottom tab bar redesign",
+    completed: false,
+    priority: "medium",
+    status: "todo",
+    dueDate: "2024-01-28",
+    project: "UI/UX",
+    createdAt: "2024-01-17",
+    completedAt: null,
+  },
+  {
+    id: "9",
+    title: "Deploy staging environment",
+    description: "Set up Vercel preview deployments",
+    completed: false,
+    priority: "high",
+    status: "in-progress",
+    dueDate: "2024-01-30",
+    project: "DevOps",
+    createdAt: "2024-01-18",
+    completedAt: null,
+  },
+  {
+    id: "10",
+    title: "Refactor payment flow",
+    description: "Simplify checkout process",
+    completed: false,
+    priority: "high",
+    status: "todo",
+    dueDate: "2024-02-05",
+    project: "Payments",
+    createdAt: "2024-01-20",
+    completedAt: null,
+  },
+];

@@ -1,0 +1,8 @@
+{
+  "/projects/[id]/page": "app/projects/[id]/page.js",
+  "/upcoming/page": "app/upcoming/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/completed/page": "app/completed/page.js",
+  "/api/v1/[...path]/route": "app/api/v1/[...path]/route.js",
+  "/projects/page": "app/projects/page.js"
+}

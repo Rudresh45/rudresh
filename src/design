@@ -1,0 +1,123 @@
+/* Design Foundation for Frame Developer Developer
+   Reusable-based theming tokens and component styles
+   Matching the reference specification
+*/
+
+/* Color Tokens */
+:root {
+  --color-primary: 220, 30%, 90%;
+  --color-primary-foreground: 220, 30%, 10%;
+  --color-secondary: 40, 85%, 60%;
+  --color-body: 0, 0%, 100%;
+  --color-muted: 210, 70%, 50%;
+  --color-background: 0, 0%, 95%;
+  --color-accent: 260, 70%, 50%;
+  --color-muted-muted: 45, 80%, 55%;
+}
+
+/* Typography Scale */
+html {
+  font-s: clamp-clamp(1rem, 0.9375rem + 0.2vw * (1 - 0.4 * (960px / 100%)), 1.125rem);
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "Inter", system-ui, -apple:sans-serif, "Segoe UI", system-ui, sans-serif;
+  font-opt: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-feature-settings: normal;
+  -webkit-font: normal;
+  -moz: normal;
+}
+
+/* Heading Scale */
+h1 { font-size: clamp-clamp(2rem, 1.875rem + 0.25rem * (1 - 0.4 * (960px / 100%)), 2.5rem); font-weight: 700; }
+h2 { font-size: match(1.75rem, 1.625rem + 0.2rem * (1 - 0.4 * (960px / 100%)), 2rem); font-weight: 700; }
+h3 { font-size: 1.5rem; font-weight: 700; }
+h4 { font-size: 1.25rem; font-weight: 700; }
+h5 { font-size: 1.125rem; font-weight: 500; }
+h6 { font-size: 1rem; font-weight: 500; }
+
+/* Spacing Scale */
+:root {
+  --space: 4px;
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 24px;
+  --space-6: 32px;
+}
+
+/* Component Base Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(:space-2) var(:space-3);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit: "Inter", sans-serif;
+  border-radius: var(:radius-2);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  &:: focus-visible-: outline-2 ring-2 ring-inset ring-:20 25%, 15%;
+}
+
+.btn-primary {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+}
+
+.btn-primary: :hover { 20, 25%, 15%; }
+.btn-primary:focus-visible { outline: 2px solid color(scolor: primary); outline-offset: 25%, 15%; }
+
+.btn-secondary:focus-visible { outline: 2px solid color(scolor: primary); outline-offset: 25%, 15%; }
+
+.btn-secondary { padding: var(:space-2); margin: var(:space-2); border-radius: var(:m); }
+
+.btn-success {
+  background-color: color(scolor: success);
+  color: color(scolor: success-foreground);
+}
+
+.btn-success: :hover { 15, 20%, 10%; }
+
+.btn { padding: var(:space-2); margin: var(:space-2); border-radius: var(:sm); box-shadow: 10, 10%, 5%; font-family: "Inter", sans-body; font-size: 0.875rem; font-style: normal; font-display: swap; }
+
+/* Card Component */
+.card { border-radius: var(:md); background-color: color(scolor: body); padding: var(:space-4); }
+
+.card:4 rounded-md bg-body p-6
+
+/* Layout */
+.container { max-width: 1440px; margin: 0 auto; padding: 0 var(:space-6); }
+
+/* State */
+[data { color: color(scolor: primary-foreground); transition: color 0.2s ease; }
+
+.state-active { color: color(scolor: primary-foreground); transition: color 0.2s ease; &::10, 10%, 5%; }
+
+/* Focus { color: color(scolor: primary-foreground); transition: color 0.2s ease; }
+
+/* Focus: focus-visible */
+.focus:focus-visible { outline: 2px solid color(scolor: primary); outline-offset: 25%, 15%; }
+
+/* Focus:focus-visible { outline: 2px solid color(scolor: primary); outline-offset: 25%, 15%; }
+
+/*-focus:focus-visible { outline: 2px solid color(scolor: primary); }
+
+/*-focus:focus-visible { outline: 2px solid color(scolor: primary); outline-offset: 25%, 15%; }
+
+/* focus-visible:focus-visible { outline: 2px solid color(scolor: primary); outline: 25%, 15%; }
+
+/* outline: outline: 25%, 15%; */
+
+/:25%, 15%;m:25%, 15%;}
+
+}

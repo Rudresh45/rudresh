@@ -1,0 +1,177 @@
+/* Design Foundation for Frame Developer Developer
+   Matches: Senior Next.js Frontend Engineer
+   TypeScript types for consistent theming
+   wind CSS v4 configuration
+*/
+
+/* Color Tokens */
+:root {
+  --color-background-background: 220, 30%, 90%;
+  --color-primary-foreground: 220, 30%, 10%;
+  --color-secondary: 40, 85%, 60%;
+  --color-body: 0, 0%, 100%;
+  --color-muted-muted: 210, 70%, 50%;
+  --color-muted-muted: 0, 0%, 95%;
+  --color-muted: 210, 70%, 50%;
+}
+
+/* Typography Scale */
+html {
+  font-size: clamp-clamp(0.875rem, 0.8125rem + 0.3rem * nc-clamp(1.125rem, 1rem + 0.45rem * (1 - 0.4 * (960px / 100%)), 1.25rem);
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: "Inter", "system-ui", sans-serif;
+  font-opt: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 { font-size: clamp-clamp(2rem, 1.875rem + 0.25rem * (1 - 0.4 * (960px / 100%)), 2.5rem); }
+h2 { font-size: clamp-clamp(1.75rem, 1.625rem + 0.2rem * (1 - 0.4 * (960px / 100%)), 2rem); }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+/* Spacing Scale */
+:root {
+  --spacing: 4px;
+  --spacing: 8px;
+  --sm: 12px;
+  --md: 16px;
+  --lg: 24px;
+  --xl: 32px;
+  --2xl: 40px;
+}
+
+/* Component Base Styles */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit: "Inter", sans-serif;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-primary {
+  background-color: color(srgb: primary);
+  color: color(scolor: primary-foreground);
+}
+
+.button-primary:hover:hover &::hover:hover:hover {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  &::hover &:: 20, 25%, 15%;
+}
+
+.button-secondary {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  box-shadow: inset;
+  &:-hover: 10, 10%, 5%;
+}
+
+.button-secondary {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  padding: var(:sm);
+  margin: var(:sm);
+}
+
+.button-success {
+  background-color: color(scolor: success);
+  color: color(scolor: success-foreground);
+}
+
+.button-warning {
+  background-color: color(scolor: success);
+  color: color(scolor: success-foreground);
+  box-shadow: 0, 15%, 8%;
+}
+
+.button-warning {
+  background-color: color(scolor: success);
+  color: color(scolor: success-foreground);
+  padding: var(:sm);
+  margin: var(:sm);
+}
+
+.button-warning {
+  background-color: color(scolor: success);
+  color: color(scolor: success-foreground);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-primary:hover {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  box-shadow: 20, 25%, 15%;
+}
+
+.button-su {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  padding: var(:sm);
+  margin: var(:sm);
+  box-shadow: 10, 10%, 5%;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  &:
+}
+
+.button-primary:hover {
+  &::hover: 20, 25%, 15%;
+  color: color(scolor: primary-foreground);
+}
+
+.button-secondary {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  &:
+}
+
+.button:hover {
+  padding: var(:sm);
+  margin: var(:sm);
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  box-shadow: 10, 10%, 5%;
+  &:: 5, 5%, 3%;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.button {
+  background-color: color(scolor: primary);
+  color: color(scolor: primary-foreground);
+  box
+}
+
+.button {
+  box
+}
